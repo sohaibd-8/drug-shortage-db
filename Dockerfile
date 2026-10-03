@@ -10,4 +10,4 @@ COPY . /app
 
 RUN pip install --no-cache-dir .
 
-CMD ["sh", "-c", "python manage.py migrate && python manage.py collectstatic --noinput && gunicorn webapp.wsgi:application --bind 0.0.0.0:${PORT:-8000}"]
+CMD ["sh", "-c", "gunicorn webapp.wsgi:application --bind 0.0.0.0:${PORT:-8000}"]
