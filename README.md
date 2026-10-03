@@ -16,6 +16,8 @@ The system intentionally stores the original URL and source for every signal. A 
 
 The scheduled workflow runs this analysis every six hours and commits the report. To enable Telegram, create a bot with @BotFather, start a chat with it (or add it to the destination group/channel), and add `TELEGRAM_BOT_TOKEN` and `TELEGRAM_CHAT_ID` as repository Actions secrets. Do not put the token in source code or chat. The workflow sends one concise message only when new relevant signals appear; it does not repeat old items. Test the text without sending with `iran-shortages notify --report data/latest-report.json --dry-run`.
 
+If MedUnited RSS fails, the collector reads its public homepage as a fallback and records that mode in the run history.
+
 For future trend analysis, SQLite keeps raw `signals` and a time series in `collection_runs`, `source_runs`, and `signal_observations`. Each observation stores the versioned analysis category; `review_labels` is reserved for human-confirmed outcomes and corrected drug names. Predictions and treatment suggestions are not generated from unverified news. Existing signals remain in the database when the new tables are created.
 
 ## Pipeline
