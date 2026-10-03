@@ -14,7 +14,7 @@ The system intentionally stores the original URL and source for every signal. A 
 
 `iran-shortages run --report data/latest-report.json` writes a JSON report for **new** items. Its transparent first-pass categories are `candidate` (named drug shortage to review), `review` (general shortage), `resolved`, `foreign`, and `context`. Foreign and background news are excluded from the Telegram digest. The rules do not verify a current shortage.
 
-The scheduled workflow runs this analysis every six hours and commits the report. To enable Telegram, create a bot with @BotFather, start a chat with it (or add it to the destination group/channel), and add `TELEGRAM_BOT_TOKEN` and `TELEGRAM_CHAT_ID` as repository Actions secrets. Do not put the token in source code or chat. The workflow sends one concise message only when new relevant signals appear; it does not repeat old items. Test the text without sending with `iran-shortages notify --report data/latest-report.json --dry-run`.
+The scheduled workflow runs this analysis every six hours and commits the report. Telegram credentials are read only from environment variables / GitHub Actions secrets: `TELEGRAM_BOT_TOKEN` and `TELEGRAM_CHAT_ID`. Never commit real credentials. Copy `.env.example` for local setup, use `iran-shortages telegram-check` to validate the bot (and optional chat), and preview a digest without sending with `iran-shortages notify --report data/latest-report.json --dry-run`. The workflow sends a concise message only when new relevant signals appear; it does not repeat old items.
 
 If MedUnited RSS fails, the collector reads its public homepage as a fallback and records that mode in the run history.
 
@@ -34,6 +34,7 @@ source .venv/bin/activate
 python -m pip install -e '.[test]'
 python -m pytest -q
 iran-shortages run
+iran-shortages telegram-check
 iran-shortages search سوتالول
 ```
 
