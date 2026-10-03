@@ -9,3 +9,4 @@ def test_dedup(tmp_path):
     assert upsert(con, s) is False
     n = con.execute("select count(*) from signals").fetchone()[0]
     assert n == 1
+    con.close()
