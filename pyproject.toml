@@ -1,0 +1,16 @@
+[project]
+name = "iran-drug-shortage-db"
+version = "0.1.0"
+description = "Automated Iranian drug-shortage monitoring and historical database"
+requires-python = ">=3.11"
+dependencies = [
+  "feedparser>=6.0.11",
+  "httpx>=0.27.0",
+  "beautifulsoup4>=4.12.3",
+]
+
+[project.scripts]
+iran-shortages = "iran_shortages.cli:main"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
