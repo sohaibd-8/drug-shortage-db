@@ -19,3 +19,4 @@ def test_report_counts_new_signals_and_source_failures():
     assert report["categories"] == {"candidate": 1}
     assert report["source_counts"]["IFDANA"] is None
     assert report["new_signals"] == 1
+    assert report["fallback_sources"] == []
