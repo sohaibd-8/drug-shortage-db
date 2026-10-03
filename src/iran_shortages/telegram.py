@@ -65,12 +65,12 @@ class TelegramClient:
         if not self.token:
             raise TelegramError("TELEGRAM_BOT_TOKEN is not configured")
 
-    def _call(self, method: str, payload: dict[str, Any] | None = None) -> Any:
+    def _call(self, method: str, payload: dict[str, Any] | None = None, request_timeout: float | None = None) -> Any:
         try:
             response = httpx.post(
                 f"{TELEGRAM_API_BASE}/bot{self.token}/{method}",
                 json=payload or {},
-                timeout=self.timeout,
+                timeout=request_timeout or self.timeout,
             )
         except httpx.HTTPError:
             raise TelegramError("Telegram request failed; check network access") from None
@@ -93,16 +93,56 @@ class TelegramClient:
         result = self._call("getChat", {"chat_id": chat_id})
         return result if isinstance(result, dict) else {}
 
-    def send_message(self, chat_id: str, text: str) -> dict[str, Any]:
-        if not chat_id.strip():
+    def get_updates(self, offset: int | None = None, timeout: int = 25) -> list[dict[str, Any]]:
+        payload: dict[str, Any] = {"timeout": timeout, "allowed_updates": ["message", "callback_query"]}
+        if offset is not None:
+            payload["offset"] = offset
+        result = self._call("getUpdates", payload, request_timeout=max(self.timeout, timeout + 10))
+        return result if isinstance(result, list) else []
+
+    def answer_callback_query(self, callback_query_id: str, text: str = "") -> None:
+        self._call(
+            "answerCallbackQuery",
+            {"callback_query_id": callback_query_id, "text": text[:180]},
+        )
+
+    def edit_message_text(
+        self,
+        chat_id: str | int,
+        message_id: int,
+        text: str,
+        reply_markup: dict[str, Any] | None = None,
+    ) -> dict[str, Any]:
+        payload: dict[str, Any] = {
+            "chat_id": chat_id,
+            "message_id": message_id,
+            "text": text[:4000],
+            "disable_web_page_preview": True,
+        }
+        if reply_markup is not None:
+            payload["reply_markup"] = reply_markup
+        result = self._call("editMessageText", payload)
+        return result if isinstance(result, dict) else {}
+
+    def send_message(
+        self,
+        chat_id: str | int,
+        text: str,
+        reply_markup: dict[str, Any] | None = None,
+    ) -> dict[str, Any]:
+        if isinstance(chat_id, str) and not chat_id.strip():
             raise TelegramError("TELEGRAM_CHAT_ID is not configured")
+
+        payload: dict[str, Any] = {
+            "chat_id": chat_id,
+            "text": text[:4000],
+            "disable_web_page_preview": True,
+        }
+        if reply_markup is not None:
+            payload["reply_markup"] = reply_markup
 
         result = self._call(
             "sendMessage",
-            {
-                "chat_id": chat_id,
-                "text": text,
-                "disable_web_page_preview": True,
-            },
+            payload,
         )
         return result if isinstance(result, dict) else {}
