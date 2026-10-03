@@ -7,6 +7,7 @@ from typing import Any
 from iran_shortages.telegram import TelegramClient, TelegramError
 from .models import CollectionRun, Signal, Source
 from .services import collect_now, sync_sources
+from .reporting import build_recent_report, build_run_report, send_messages
 
 
 def parse_admin_ids(raw: str | None) -> set[int]:
@@ -56,6 +57,7 @@ def _main_menu() -> tuple[str, dict[str, Any]]:
     return _dashboard_text(), _kb([
         [("📰 بررسی سیگنال‌ها", "adm:signals:0"), ("📡 منابع", "adm:sources")],
         [("▶️ اجرای پایش الآن", "adm:collect"), ("📈 آمار", "adm:stats")],
+        [("📋 گزارش آخرین پایش", "adm:report:last"), ("🧠 تحلیل ۲۴ ساعت", "adm:report:24h")],
         [("🔄 تازه‌سازی", "adm:home")],
     ])
 
@@ -197,8 +199,10 @@ class TelegramAdminBot:
                     self.client.answer_callback_query(callback_id, "پایش شروع شد…")
                     callback_id = ""
                 run = collect_now()
+                report_messages = build_run_report(run)
+                send_messages(self.client, chat_id, report_messages)
                 text, markup = _main_menu()
-                text += f"\n\n✅ اجرا تمام شد: {run.seen} مورد دیده شد، {run.new} مورد جدید."
+                text += f"\n\n✅ اجرا تمام شد: {run.seen} مورد دیده شد، {run.new} مورد جدید. گزارش حرفه‌ای هم ارسال شد."
             elif data.startswith("adm:signals:"):
                 page = int(data.rsplit(":", 1)[1])
                 text, markup = _signals_page(page)
@@ -219,6 +223,19 @@ class TelegramAdminBot:
                 text, markup = _sources_text()
             elif data == "adm:stats":
                 text, markup = _stats_text()
+            elif data == "adm:report:last":
+                run = CollectionRun.objects.first()
+                if run:
+                    send_messages(self.client, chat_id, build_run_report(run))
+                    text, markup = _main_menu()
+                    text += "\n\n📋 گزارش حرفه‌ای آخرین پایش ارسال شد."
+                else:
+                    text, markup = _main_menu()
+                    text += "\n\nهنوز گزارشی برای نمایش وجود ندارد."
+            elif data == "adm:report:24h":
+                send_messages(self.client, chat_id, build_recent_report(24))
+                text, markup = _main_menu()
+                text += "\n\n🧠 تحلیل ۲۴ ساعت اخیر ارسال شد."
             else:
                 text, markup = _main_menu()
             self._edit(chat_id, message_id, text, markup)
