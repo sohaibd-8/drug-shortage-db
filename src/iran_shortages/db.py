@@ -30,7 +30,7 @@ CREATE TABLE IF NOT EXISTS collection_runs (
 CREATE TABLE IF NOT EXISTS source_runs (
   run_id INTEGER NOT NULL REFERENCES collection_runs(id),
   source TEXT NOT NULL,
-  status TEXT NOT NULL CHECK(status IN ('ok', 'error')),
+  status TEXT NOT NULL CHECK(status IN ('ok', 'fallback', 'error')),
   signals_seen INTEGER NOT NULL DEFAULT 0,
   error TEXT,
   PRIMARY KEY (run_id, source)

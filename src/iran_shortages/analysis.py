@@ -48,6 +48,7 @@ def make_report(stats: dict, items: list[dict]) -> dict:
         "new_signals": stats["new"],
         "categories": dict(counts),
         "source_counts": stats["source_counts"],
+        "fallback_sources": stats.get("fallback_sources", []),
         "errors": stats["errors"],
         "items": analyzed,
         "note": "دسته‌بندی خودکار است و تأیید کمبود فعلی محسوب نمی‌شود.",

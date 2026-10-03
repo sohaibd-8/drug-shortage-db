@@ -3,6 +3,7 @@ SOURCES = [
         "name": "MedUnited",
         "kind": "rss",
         "url": "https://medunited.ir/rss.xml",
+        "fallback_url": "https://medunited.ir/",
         "enabled": True,
     },
     {
