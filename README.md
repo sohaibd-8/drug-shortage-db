@@ -21,7 +21,8 @@ GitHub Actions runs the collector every 6 hours and commits database changes.
 ```bash
 python -m venv .venv
 source .venv/bin/activate
-pip install -e .
+python -m pip install -e '.[test]'
+python -m pytest -q
 iran-shortages run
 iran-shortages search سوتالول
 ```
