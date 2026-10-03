@@ -1,0 +1,24 @@
+{
+  "generated_at": "2026-10-03T14:13:41.049134+00:00",
+  "sources_checked": 3,
+  "signals_seen": 1,
+  "new_signals": 0,
+  "categories": {},
+  "source_counts": {
+    "MedUnited": null,
+    "DoshanbehayeDarouei": 1,
+    "IFDANA": null
+  },
+  "errors": [
+    {
+      "source": "MedUnited",
+      "error": "Client error '404 Not Found' for url 'https://medunited.ir/rss.xml'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+    },
+    {
+      "source": "IFDANA",
+      "error": "timed out"
+    }
+  ],
+  "items": [],
+  "note": "دسته‌بندی خودکار است و تأیید کمبود فعلی محسوب نمی‌شود."
+}
