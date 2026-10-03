@@ -1,19 +1,16 @@
 {
-  "generated_at": "2026-10-03T14:13:41.049134+00:00",
+  "generated_at": "2026-10-03T14:18:39.251492+00:00",
   "sources_checked": 3,
-  "signals_seen": 1,
+  "signals_seen": 11,
   "new_signals": 0,
   "categories": {},
   "source_counts": {
-    "MedUnited": null,
+    "MedUnited": 10,
     "DoshanbehayeDarouei": 1,
     "IFDANA": null
   },
+  "fallback_sources": [],
   "errors": [
-    {
-      "source": "MedUnited",
-      "error": "Client error '404 Not Found' for url 'https://medunited.ir/rss.xml'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
-    },
     {
       "source": "IFDANA",
       "error": "timed out"
