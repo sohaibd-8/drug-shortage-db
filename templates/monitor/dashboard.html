@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>پنل پایش کمبود دارو</title>
+<style>
+body{font-family:Tahoma,Arial,sans-serif;background:#f5f7fb;margin:0;color:#172033}
+header{background:#111827;color:white;padding:18px 28px;display:flex;justify-content:space-between;align-items:center}
+main{max-width:1100px;margin:28px auto;padding:0 16px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px}
+.card{background:white;border-radius:14px;padding:18px;box-shadow:0 4px 20px #0000000d}
+.num{font-size:30px;font-weight:700;margin-top:8px}
+.actions{display:flex;gap:10px;flex-wrap:wrap;margin:20px 0}
+button,a.btn{background:#111827;color:white;border:0;border-radius:10px;padding:10px 14px;text-decoration:none;cursor:pointer}
+button.secondary{background:#2563eb}
+table{width:100%;border-collapse:collapse;background:white;border-radius:14px;overflow:hidden}
+th,td{padding:12px;border-bottom:1px solid #eee;text-align:right}
+.msg{padding:10px 14px;background:#e8f5e9;border-radius:10px;margin:10px 0}
+small{color:#667085}
+</style>
+</head>
+<body>
+<header><strong>پنل مدیریتی پایش کمبود دارو</strong><a class="btn" href="/admin/">مدیریت پیشرفته</a></header>
+<main>
+{% for message in messages %}<div class="msg">{{ message }}</div>{% endfor %}
+<div class="grid">
+<div class="card">کل سیگنال‌ها<div class="num">{{ signals }}</div></div>
+<div class="card">نیازمند بررسی<div class="num">{{ candidates }}</div></div>
+<div class="card">تأییدشده<div class="num">{{ confirmed }}</div></div>
+<div class="card">منابع<div class="num">{{ sources }}</div></div>
+</div>
+<div class="actions">
+<form method="post" action="/collect/">{% csrf_token %}<button class="secondary">اجرای جمع‌آوری الآن</button></form>
+<form method="post" action="/telegram/test/">{% csrf_token %}<button>ارسال پیام تست تلگرام</button></form>
+<a class="btn" href="/admin/monitor/signal/">مدیریت خبرها</a>
+<a class="btn" href="/admin/monitor/source/">مدیریت منابع</a>
+</div>
+{% if latest_run %}<p><small>آخرین اجرا: {{ latest_run.started_at }} — دیده‌شده {{ latest_run.seen }}، جدید {{ latest_run.new }}</small></p>{% endif %}
+<table>
+<thead><tr><th>عنوان</th><th>منبع</th><th>دسته</th><th>زمان</th></tr></thead>
+<tbody>
+{% for s in latest_signals %}
+<tr><td><a href="/admin/monitor/signal/{{ s.id }}/change/">{{ s.title }}</a></td><td>{{ s.source }}</td><td>{{ s.get_category_display }}</td><td>{{ s.first_seen_at }}</td></tr>
+{% empty %}<tr><td colspan="4">هنوز داده‌ای ثبت نشده است.</td></tr>{% endfor %}
+</tbody>
+</table>
+</main>
+</body>
+</html>
