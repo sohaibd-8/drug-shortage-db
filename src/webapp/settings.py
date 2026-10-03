@@ -2,7 +2,7 @@ import os
 from pathlib import Path
 import dj_database_url
 
-BASE_DIR = Path(__file__).resolve().parents[2]
+BASE_DIR = Path(os.getenv("APP_ROOT", Path.cwd())).resolve()
 SECRET_KEY = os.getenv("DJANGO_SECRET_KEY", "dev-only-change-me")
 DEBUG = os.getenv("DJANGO_DEBUG", "0") == "1"
 ALLOWED_HOSTS = ["*"]
