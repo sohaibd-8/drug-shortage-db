@@ -20,6 +20,37 @@ CREATE TABLE IF NOT EXISTS signals (
 CREATE INDEX IF NOT EXISTS idx_signals_drug ON signals(drug_name);
 CREATE INDEX IF NOT EXISTS idx_signals_published ON signals(published_at);
 CREATE INDEX IF NOT EXISTS idx_signals_source ON signals(source);
+CREATE TABLE IF NOT EXISTS collection_runs (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  started_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  finished_at TEXT,
+  signals_seen INTEGER NOT NULL DEFAULT 0,
+  new_signals INTEGER NOT NULL DEFAULT 0
+);
+CREATE TABLE IF NOT EXISTS source_runs (
+  run_id INTEGER NOT NULL REFERENCES collection_runs(id),
+  source TEXT NOT NULL,
+  status TEXT NOT NULL CHECK(status IN ('ok', 'error')),
+  signals_seen INTEGER NOT NULL DEFAULT 0,
+  error TEXT,
+  PRIMARY KEY (run_id, source)
+);
+CREATE TABLE IF NOT EXISTS signal_observations (
+  run_id INTEGER NOT NULL REFERENCES collection_runs(id),
+  fingerprint TEXT NOT NULL REFERENCES signals(fingerprint),
+  category TEXT NOT NULL,
+  analysis_version TEXT NOT NULL,
+  observed_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (run_id, fingerprint)
+);
+CREATE INDEX IF NOT EXISTS idx_observations_fingerprint ON signal_observations(fingerprint);
+CREATE TABLE IF NOT EXISTS review_labels (
+  fingerprint TEXT PRIMARY KEY REFERENCES signals(fingerprint),
+  label TEXT NOT NULL CHECK(label IN ('confirmed_shortage', 'not_shortage', 'resolved', 'uncertain')),
+  corrected_drug_name TEXT,
+  note TEXT,
+  reviewed_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
 """
 
 def connect(path: str = "data/shortages.sqlite3"):
@@ -47,3 +78,33 @@ def upsert(con, signal: ShortageSignal) -> bool:
     )
     con.commit()
     return not exists
+
+
+def start_run(con) -> int:
+    run_id = con.execute("INSERT INTO collection_runs DEFAULT VALUES").lastrowid
+    con.commit()
+    return run_id
+
+
+def record_source(con, run_id: int, source: str, status: str, count: int, error: str | None = None):
+    con.execute(
+        "INSERT INTO source_runs(run_id, source, status, signals_seen, error) VALUES (?, ?, ?, ?, ?)",
+        (run_id, source, status, count, error),
+    )
+    con.commit()
+
+
+def record_observation(con, run_id: int, fingerprint: str, category: str):
+    con.execute(
+        "INSERT INTO signal_observations(run_id, fingerprint, category, analysis_version) VALUES (?, ?, ?, ?)",
+        (run_id, fingerprint, category, "rules-v1"),
+    )
+    con.commit()
+
+
+def finish_run(con, run_id: int, seen: int, new: int):
+    con.execute(
+        "UPDATE collection_runs SET finished_at=CURRENT_TIMESTAMP, signals_seen=?, new_signals=? WHERE id=?",
+        (seen, new, run_id),
+    )
+    con.commit()
