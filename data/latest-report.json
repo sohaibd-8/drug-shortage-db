@@ -1,11 +1,9 @@
 {
-  "generated_at": "2026-10-12T06:46:50.896101+00:00",
+  "generated_at": "2026-10-12T12:58:16.898235+00:00",
   "sources_checked": 3,
   "signals_seen": 11,
-  "new_signals": 1,
-  "categories": {
-    "context": 1
-  },
+  "new_signals": 0,
+  "categories": {},
   "source_counts": {
     "MedUnited": 10,
     "DoshanbehayeDarouei": 1,
@@ -18,14 +16,6 @@
       "error": "timed out"
     }
   ],
-  "items": [
-    {
-      "title": "ادعای تأمین دارو با قیمت پایین‌تر نیازمند مستندات است؛ چالش تأمین برخی داروهای ضدافسردگی",
-      "url": "https://doshanbehayedarouei.ir/pharma/31174/",
-      "source": "DoshanbehayeDarouei",
-      "category": "context",
-      "reason": "کمبود در عنوان خبر مطرح نشده است"
-    }
-  ],
+  "items": [],
   "note": "دسته‌بندی خودکار است و تأیید کمبود فعلی محسوب نمی‌شود."
 }
