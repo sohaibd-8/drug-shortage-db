@@ -1,20 +1,16 @@
 {
-  "generated_at": "2026-10-13T00:48:29.139994+00:00",
+  "generated_at": "2026-10-13T06:45:20.971102+00:00",
   "sources_checked": 3,
   "signals_seen": 10,
   "new_signals": 0,
   "categories": {},
   "source_counts": {
     "MedUnited": 10,
-    "DoshanbehayeDarouei": null,
+    "DoshanbehayeDarouei": 0,
     "IFDANA": null
   },
   "fallback_sources": [],
   "errors": [
-    {
-      "source": "DoshanbehayeDarouei",
-      "error": "The read operation timed out"
-    },
     {
       "source": "IFDANA",
       "error": "timed out"
