@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-18T00:58:06.144495+00:00",
+  "generated_at": "2026-10-18T06:54:57.609663+00:00",
   "sources_checked": 3,
-  "signals_seen": 10,
+  "signals_seen": 11,
   "new_signals": 0,
   "categories": {},
   "source_counts": {
     "MedUnited": 10,
-    "DoshanbehayeDarouei": 0,
+    "DoshanbehayeDarouei": 1,
     "IFDANA": null
   },
   "fallback_sources": [],
