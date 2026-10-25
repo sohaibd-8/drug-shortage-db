@@ -1,11 +1,9 @@
 {
-  "generated_at": "2026-10-25T06:58:13.896670+00:00",
+  "generated_at": "2026-10-25T12:54:29.489846+00:00",
   "sources_checked": 3,
   "signals_seen": 12,
-  "new_signals": 1,
-  "categories": {
-    "review": 1
-  },
+  "new_signals": 0,
+  "categories": {},
   "source_counts": {
     "MedUnited": 10,
     "DoshanbehayeDarouei": 2,
@@ -18,14 +16,6 @@
       "error": "timed out"
     }
   ],
-  "items": [
-    {
-      "title": "هشدار درباره کمبود برخی داروهای اعصاب و روان و تأثیر تأخیر بیمه‌ها بر زنجیره تأمین دارو",
-      "url": "https://doshanbehayedarouei.ir/pharma/31825/",
-      "source": "DoshanbehayeDarouei",
-      "category": "review",
-      "reason": "خبر درباره کمبود است، اما داروی مشخصی در عنوان ندارد"
-    }
-  ],
+  "items": [],
   "note": "دسته‌بندی خودکار است و تأیید کمبود فعلی محسوب نمی‌شود."
 }
