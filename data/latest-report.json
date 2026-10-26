@@ -1,9 +1,11 @@
 {
-  "generated_at": "2026-10-25T18:49:53.253717+00:00",
+  "generated_at": "2026-10-26T01:10:42.605098+00:00",
   "sources_checked": 3,
   "signals_seen": 12,
-  "new_signals": 0,
-  "categories": {},
+  "new_signals": 1,
+  "categories": {
+    "review": 1
+  },
   "source_counts": {
     "MedUnited": 10,
     "DoshanbehayeDarouei": 2,
@@ -16,6 +18,14 @@
       "error": "timed out"
     }
   ],
-  "items": [],
+  "items": [
+    {
+      "title": "سخنگوی سازمان غذاودارو، اقدامات پیش دستانه برای جلوگیری از کمبودهای دارویی را تشریح کرد",
+      "url": "https://doshanbehayedarouei.ir/pharma/31811/",
+      "source": "DoshanbehayeDarouei",
+      "category": "review",
+      "reason": "خبر درباره کمبود است، اما داروی مشخصی در عنوان ندارد"
+    }
+  ],
   "note": "دسته‌بندی خودکار است و تأیید کمبود فعلی محسوب نمی‌شود."
 }
