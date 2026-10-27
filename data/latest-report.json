@@ -1,11 +1,14 @@
 {
-  "generated_at": "2026-10-27T01:03:46.291922+00:00",
+  "generated_at": "2026-10-27T07:02:09.939994+00:00",
   "sources_checked": 3,
-  "signals_seen": 10,
-  "new_signals": 0,
-  "categories": {},
+  "signals_seen": 4,
+  "new_signals": 4,
+  "categories": {
+    "context": 2,
+    "review": 2
+  },
   "source_counts": {
-    "MedUnited": 10,
+    "MedUnited": 4,
     "DoshanbehayeDarouei": 0,
     "IFDANA": null
   },
@@ -16,6 +19,35 @@
       "error": "timed out"
     }
   ],
-  "items": [],
+  "items": [
+    {
+      "title": "صنعت و بازار دارویی ایران | گسترش ارجاع الکترونیک و استقرار ۱۲۲ کانکس دارویی برای ۶۵۵ هزار روستایی در استان لرستان",
+      "url": "https://medunited.ir/news/۶۵۵-هزار-روستانشین-لرستان-خدمات-الکترونیک-بیمه-سلامت-دریافت-693dda1f/",
+      "source": "MedUnited",
+      "category": "context",
+      "reason": "کمبود در عنوان خبر مطرح نشده است"
+    },
+    {
+      "title": "تحلیل اقتصادی صنعت دارو | هشدار درباره پیامدهای ابرتورم و بحران نقدینگی بر زنجیره تأمین دارو",
+      "url": "https://medunited.ir/news/analysis-of-liquidity-crisis-and-hyperinflation-impact-on-ir-d8229f18/",
+      "source": "MedUnited",
+      "category": "context",
+      "reason": "کمبود در عنوان خبر مطرح نشده است"
+    },
+    {
+      "title": "کمیسیون بهداشت مجلس | هشدار درباره کمبود برخی داروهای اعصاب و روان به دنبال تأخیر یک‌ساله بیمه‌ها",
+      "url": "https://medunited.ir/news/iran-parliament-health-committee-warns-of-psychiatric-drug-s-e80fac8c/",
+      "source": "MedUnited",
+      "category": "review",
+      "reason": "خبر درباره کمبود است، اما داروی مشخصی در عنوان ندارد"
+    },
+    {
+      "title": "سازمان غذا و دارو | تشریح اقدامات پیش‌دستانه و پایش زنجیره تأمین برای پیشگیری از کمبود دارو",
+      "url": "https://medunited.ir/news/iran-fda-spokesperson-details-proactive-measures-to-prevent-ef3afb1b/",
+      "source": "MedUnited",
+      "category": "review",
+      "reason": "خبر درباره کمبود است، اما داروی مشخصی در عنوان ندارد"
+    }
+  ],
   "note": "دسته‌بندی خودکار است و تأیید کمبود فعلی محسوب نمی‌شود."
 }
