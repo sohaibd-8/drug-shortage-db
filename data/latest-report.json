@@ -1,11 +1,9 @@
 {
-  "generated_at": "2026-10-28T07:13:15.415914+00:00",
+  "generated_at": "2026-10-28T13:11:37.776215+00:00",
   "sources_checked": 3,
   "signals_seen": 6,
-  "new_signals": 1,
-  "categories": {
-    "review": 1
-  },
+  "new_signals": 0,
+  "categories": {},
   "source_counts": {
     "MedUnited": 5,
     "DoshanbehayeDarouei": 1,
@@ -18,14 +16,6 @@
       "error": "timed out"
     }
   ],
-  "items": [
-    {
-      "title": "انتقاد عضو کمیسیون بهداشت در مورد کمبود شربت اپیوم",
-      "url": "https://doshanbehayedarouei.ir/pharma/32031/",
-      "source": "DoshanbehayeDarouei",
-      "category": "review",
-      "reason": "خبر درباره کمبود است، اما داروی مشخصی در عنوان ندارد"
-    }
-  ],
+  "items": [],
   "note": "دسته‌بندی خودکار است و تأیید کمبود فعلی محسوب نمی‌شود."
 }
