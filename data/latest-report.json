@@ -1,11 +1,9 @@
 {
-  "generated_at": "2026-10-29T07:13:28.562722+00:00",
+  "generated_at": "2026-10-29T13:13:49.713532+00:00",
   "sources_checked": 3,
   "signals_seen": 6,
-  "new_signals": 1,
-  "categories": {
-    "review": 1
-  },
+  "new_signals": 0,
+  "categories": {},
   "source_counts": {
     "MedUnited": 5,
     "DoshanbehayeDarouei": 1,
@@ -18,14 +16,6 @@
       "error": "timed out"
     }
   ],
-  "items": [
-    {
-      "title": "کمبود دارویی | انتقاد عضو کمیسیون بهداشت مجلس از کمبود شربت اپیوم در کشور",
-      "url": "https://medunited.ir/news/health-commission-mp-criticizes-shortage-of-opium-syrup-in-i-348f6331/",
-      "source": "MedUnited",
-      "category": "review",
-      "reason": "خبر درباره کمبود است، اما داروی مشخصی در عنوان ندارد"
-    }
-  ],
+  "items": [],
   "note": "دسته‌بندی خودکار است و تأیید کمبود فعلی محسوب نمی‌شود."
 }
