@@ -1,9 +1,11 @@
 {
-  "generated_at": "2026-11-01T07:16:31.384861+00:00",
+  "generated_at": "2026-11-01T13:04:22.280263+00:00",
   "sources_checked": 3,
   "signals_seen": 1,
-  "new_signals": 0,
-  "categories": {},
+  "new_signals": 1,
+  "categories": {
+    "context": 1
+  },
   "source_counts": {
     "MedUnited": 1,
     "DoshanbehayeDarouei": 0,
@@ -16,6 +18,14 @@
       "error": "timed out"
     }
   ],
-  "items": [],
+  "items": [
+    {
+      "title": "صنعت داروسازی ایران | هشدار نسبت به دلسردی تولیدکنندگان واقعی و مخاطرات پدیده توهم تولید",
+      "url": "https://medunited.ir/news/real-pharma-manufacturers-voice-concerns-over-industrial-dis-06a6fdd6/",
+      "source": "MedUnited",
+      "category": "context",
+      "reason": "کمبود در عنوان خبر مطرح نشده است"
+    }
+  ],
   "note": "دسته‌بندی خودکار است و تأیید کمبود فعلی محسوب نمی‌شود."
 }
