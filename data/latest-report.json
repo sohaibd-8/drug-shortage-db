@@ -1,11 +1,13 @@
 {
-  "generated_at": "2026-11-01T22:05:56.545310+00:00",
+  "generated_at": "2026-11-02T06:12:16.084876+00:00",
   "sources_checked": 3,
-  "signals_seen": 1,
-  "new_signals": 0,
-  "categories": {},
+  "signals_seen": 2,
+  "new_signals": 1,
+  "categories": {
+    "review": 1
+  },
   "source_counts": {
-    "MedUnited": 1,
+    "MedUnited": 2,
     "DoshanbehayeDarouei": 0,
     "IFDANA": null
   },
@@ -16,6 +18,14 @@
       "error": "timed out"
     }
   ],
-  "items": [],
+  "items": [
+    {
+      "title": "نظام سلامت و درمان | چالش‌های ازدحام و کمبود امکانات در بیمارستان‌های دولتی تهران در ترازوی اقتصاد سلامت",
+      "url": "https://medunited.ir/news/field-report-highlights-crowding-and-resource-strains-in-teh-ba07940a/",
+      "source": "MedUnited",
+      "category": "review",
+      "reason": "خبر درباره کمبود است، اما داروی مشخصی در عنوان ندارد"
+    }
+  ],
   "note": "دسته‌بندی خودکار است و تأیید کمبود فعلی محسوب نمی‌شود."
 }
