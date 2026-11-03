@@ -1,12 +1,9 @@
 {
-  "generated_at": "2026-11-03T14:21:42.026894+00:00",
+  "generated_at": "2026-11-03T23:26:35.335651+00:00",
   "sources_checked": 3,
   "signals_seen": 4,
-  "new_signals": 2,
-  "categories": {
-    "review": 1,
-    "foreign": 1
-  },
+  "new_signals": 0,
+  "categories": {},
   "source_counts": {
     "MedUnited": 4,
     "DoshanbehayeDarouei": 0,
@@ -19,21 +16,6 @@
       "error": "timed out"
     }
   ],
-  "items": [
-    {
-      "title": "وزارت بهداشت ایران | چالش کمبود منابع مالی در نوسازی بیمارستان‌های فرسوده کشور",
-      "url": "https://medunited.ir/news/budget-shortages-for-renovating-aging-hospitals-in-iran-2795a8d1/",
-      "source": "MedUnited",
-      "category": "review",
-      "reason": "خبر درباره کمبود است، اما داروی مشخصی در عنوان ندارد"
-    },
-    {
-      "title": "بازار دارویی آمریکا | تشدید کمبود فرآورده‌های استروژن و محصولات هورمونی جایگزین یائسگی",
-      "url": "https://medunited.ir/news/estrogen-hormone-therapy-shortages-worsen-in-the-us-as-deman-8062c0c8/",
-      "source": "MedUnited",
-      "category": "foreign",
-      "reason": "خبر درباره کشور دیگری است"
-    }
-  ],
+  "items": [],
   "note": "دسته‌بندی خودکار است و تأیید کمبود فعلی محسوب نمی‌شود."
 }
