@@ -1,12 +1,14 @@
 {
-  "generated_at": "2026-11-04T06:30:18.777317+00:00",
+  "generated_at": "2026-11-04T19:48:55.025827+00:00",
   "sources_checked": 3,
-  "signals_seen": 3,
-  "new_signals": 0,
-  "categories": {},
+  "signals_seen": 4,
+  "new_signals": 2,
+  "categories": {
+    "context": 2
+  },
   "source_counts": {
     "MedUnited": 3,
-    "DoshanbehayeDarouei": 0,
+    "DoshanbehayeDarouei": 1,
     "IFDANA": null
   },
   "fallback_sources": [],
@@ -16,6 +18,21 @@
       "error": "timed out"
     }
   ],
-  "items": [],
+  "items": [
+    {
+      "title": "سازمان غذا و دارو | ائتلاف راهبردی با ۸ دانشگاه علوم پزشکی کلان‌منطقه ۵ برای تحول در نظارت و تأمین دارو",
+      "url": "https://medunited.ir/news/strategic-alliance-between-ifda-and-8-medical-universities-o-7bcc882b/",
+      "source": "MedUnited",
+      "category": "context",
+      "reason": "کمبود در عنوان خبر مطرح نشده است"
+    },
+    {
+      "title": "ائتلاف راهبردی سازمان غذا و دارو و ۸ دانشگاه علوم پزشکی برای تحول در نظارت و تأمین دارو",
+      "url": "https://doshanbehayedarouei.ir/pharma/32264/",
+      "source": "DoshanbehayeDarouei",
+      "category": "context",
+      "reason": "کمبود در عنوان خبر مطرح نشده است"
+    }
+  ],
   "note": "دسته‌بندی خودکار است و تأیید کمبود فعلی محسوب نمی‌شود."
 }
