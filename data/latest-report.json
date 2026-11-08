@@ -1,14 +1,12 @@
 {
-  "generated_at": "2026-11-08T06:07:12.995523+00:00",
+  "generated_at": "2026-11-08T13:29:40.461507+00:00",
   "sources_checked": 3,
-  "signals_seen": 3,
-  "new_signals": 1,
-  "categories": {
-    "context": 1
-  },
+  "signals_seen": 2,
+  "new_signals": 0,
+  "categories": {},
   "source_counts": {
     "MedUnited": 2,
-    "DoshanbehayeDarouei": 1,
+    "DoshanbehayeDarouei": 0,
     "IFDANA": null
   },
   "fallback_sources": [],
@@ -18,14 +16,6 @@
       "error": "timed out"
     }
   ],
-  "items": [
-    {
-      "title": "سازمان غذا و دارو | انباشت ۲۷۰ همتی بدهی در زنجیره تأمین دارو",
-      "url": "https://medunited.ir/news/iran-pharma-supply-chain-burdened-by-270-trillion-tomans-of-e47f49f9/",
-      "source": "MedUnited",
-      "category": "context",
-      "reason": "کمبود در عنوان خبر مطرح نشده است"
-    }
-  ],
+  "items": [],
   "note": "دسته‌بندی خودکار است و تأیید کمبود فعلی محسوب نمی‌شود."
 }
