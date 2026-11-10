@@ -1,11 +1,13 @@
 {
-  "generated_at": "2026-11-09T22:25:17.411532+00:00",
+  "generated_at": "2026-11-10T07:23:53.963789+00:00",
   "sources_checked": 3,
-  "signals_seen": 1,
-  "new_signals": 0,
-  "categories": {},
+  "signals_seen": 2,
+  "new_signals": 1,
+  "categories": {
+    "context": 1
+  },
   "source_counts": {
-    "MedUnited": 1,
+    "MedUnited": 2,
     "DoshanbehayeDarouei": 0,
     "IFDANA": null
   },
@@ -16,6 +18,14 @@
       "error": "timed out"
     }
   ],
-  "items": [],
+  "items": [
+    {
+      "title": "نسخه‌ای که داروی آن تأمین نقدینگی است",
+      "url": "https://medunited.ir/news/irna-a-prescription-whose-medicine-is-liquidity-49926f0e/",
+      "source": "MedUnited",
+      "category": "context",
+      "reason": "کمبود در عنوان خبر مطرح نشده است"
+    }
+  ],
   "note": "دسته‌بندی خودکار است و تأیید کمبود فعلی محسوب نمی‌شود."
 }
