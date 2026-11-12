@@ -1,13 +1,11 @@
 {
-  "generated_at": "2026-11-11T19:38:55.365088+00:00",
+  "generated_at": "2026-11-12T07:16:38.170937+00:00",
   "sources_checked": 3,
-  "signals_seen": 4,
-  "new_signals": 2,
-  "categories": {
-    "review": 2
-  },
+  "signals_seen": 3,
+  "new_signals": 0,
+  "categories": {},
   "source_counts": {
-    "MedUnited": 4,
+    "MedUnited": 3,
     "DoshanbehayeDarouei": 0,
     "IFDANA": null
   },
@@ -18,21 +16,6 @@
       "error": "timed out"
     }
   ],
-  "items": [
-    {
-      "title": "قاچاق معکوس دارو و کمبود داروهای روان‌پزشکی از نگاه رئیس کمیته دارو",
-      "url": "https://medunited.ir/news/تحلیل-رییس-کمیته-دارو-و-غذای-کمیسیون-بهداشت-مجلس-از-وضعیت-دا-a5e41061/",
-      "source": "MedUnited",
-      "category": "review",
-      "reason": "خبر درباره کمبود است، اما داروی مشخصی در عنوان ندارد"
-    },
-    {
-      "title": "بیمارستان عنبرآباد؛ پروژه‌ای که در هزارتوی کمبود اعتبار پیر شد",
-      "url": "https://medunited.ir/news/anbarabad-hospital-the-story-of-a-project-that-aged-in-the-m-fd9b2068/",
-      "source": "MedUnited",
-      "category": "review",
-      "reason": "خبر درباره کمبود است، اما داروی مشخصی در عنوان ندارد"
-    }
-  ],
+  "items": [],
   "note": "دسته‌بندی خودکار است و تأیید کمبود فعلی محسوب نمی‌شود."
 }
