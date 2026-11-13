@@ -1,11 +1,13 @@
 {
-  "generated_at": "2026-11-12T19:58:14.266557+00:00",
+  "generated_at": "2026-11-13T06:50:36.649352+00:00",
   "sources_checked": 3,
-  "signals_seen": 3,
-  "new_signals": 0,
-  "categories": {},
+  "signals_seen": 4,
+  "new_signals": 1,
+  "categories": {
+    "context": 1
+  },
   "source_counts": {
-    "MedUnited": 3,
+    "MedUnited": 4,
     "DoshanbehayeDarouei": 0,
     "IFDANA": null
   },
@@ -16,6 +18,14 @@
       "error": "timed out"
     }
   ],
-  "items": [],
+  "items": [
+    {
+      "title": "پشت پرده عملکرد بانک مرکزی در تأمین ارز دارو و تجهیزات پزشکی",
+      "url": "https://medunited.ir/news/پشت-پرده-عملکرد-بانک-مرکزی-در-تامین-ارز-دارو-و-تجهیزات-2b9230b2/",
+      "source": "MedUnited",
+      "category": "context",
+      "reason": "کمبود در عنوان خبر مطرح نشده است"
+    }
+  ],
   "note": "دسته‌بندی خودکار است و تأیید کمبود فعلی محسوب نمی‌شود."
 }
