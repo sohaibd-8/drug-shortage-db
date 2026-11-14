@@ -1,11 +1,9 @@
 {
-  "generated_at": "2026-11-14T18:08:27.886182+00:00",
+  "generated_at": "2026-11-14T22:29:14.147227+00:00",
   "sources_checked": 3,
   "signals_seen": 5,
-  "new_signals": 2,
-  "categories": {
-    "context": 2
-  },
+  "new_signals": 0,
+  "categories": {},
   "source_counts": {
     "MedUnited": 4,
     "DoshanbehayeDarouei": 1,
@@ -18,21 +16,6 @@
       "error": "timed out"
     }
   ],
-  "items": [
-    {
-      "title": "پیرصالحی: مشکل، ناکافی بودن سهم ارزی دارو است نه عملکرد بانک مرکزی",
-      "url": "https://medunited.ir/archive/2026-11-14/#i-f6fa6688",
-      "source": "MedUnited",
-      "category": "context",
-      "reason": "کمبود در عنوان خبر مطرح نشده است"
-    },
-    {
-      "title": "اختصاص 15 همت اعتبار برای تأمین داروی بیماران خاص و سرطانی",
-      "url": "https://doshanbehayedarouei.ir/pharma/32543/",
-      "source": "DoshanbehayeDarouei",
-      "category": "context",
-      "reason": "کمبود در عنوان خبر مطرح نشده است"
-    }
-  ],
+  "items": [],
   "note": "دسته‌بندی خودکار است و تأیید کمبود فعلی محسوب نمی‌شود."
 }
