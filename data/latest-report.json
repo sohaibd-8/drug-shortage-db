@@ -1,9 +1,11 @@
 {
-  "generated_at": "2026-11-15T06:39:17.017809+00:00",
+  "generated_at": "2026-11-15T18:54:10.114022+00:00",
   "sources_checked": 3,
   "signals_seen": 4,
-  "new_signals": 0,
-  "categories": {},
+  "new_signals": 2,
+  "categories": {
+    "context": 2
+  },
   "source_counts": {
     "MedUnited": 4,
     "DoshanbehayeDarouei": 0,
@@ -16,6 +18,21 @@
       "error": "timed out"
     }
   ],
-  "items": [],
+  "items": [
+    {
+      "title": "تسویه زنجیره‌ای مطالبات و بدهی‌های متقابل بیمه‌گران و شرکت‌های دارو آغاز شد",
+      "url": "https://medunited.ir/archive/2026-11-15/#i-1d42db23",
+      "source": "MedUnited",
+      "category": "context",
+      "reason": "کمبود در عنوان خبر مطرح نشده است"
+    },
+    {
+      "title": "ذخایر راهبردی دارو باید هوشمندانه مدیریت شود",
+      "url": "https://medunited.ir/archive/2026-11-15/#i-688ce9b4",
+      "source": "MedUnited",
+      "category": "context",
+      "reason": "کمبود در عنوان خبر مطرح نشده است"
+    }
+  ],
   "note": "دسته‌بندی خودکار است و تأیید کمبود فعلی محسوب نمی‌شود."
 }
