@@ -1,15 +1,14 @@
 {
-  "generated_at": "2026-11-16T22:09:14.004494+00:00",
+  "generated_at": "2026-11-17T07:59:10.263421+00:00",
   "sources_checked": 3,
   "signals_seen": 7,
-  "new_signals": 3,
+  "new_signals": 2,
   "categories": {
-    "context": 2,
-    "resolved": 1
+    "review": 2
   },
   "source_counts": {
-    "MedUnited": 6,
-    "DoshanbehayeDarouei": 1,
+    "MedUnited": 5,
+    "DoshanbehayeDarouei": 2,
     "IFDANA": null
   },
   "fallback_sources": [],
@@ -21,25 +20,18 @@
   ],
   "items": [
     {
-      "title": "تأمین پایدار دارو با حمایت به‌موقع دولت از صنعت دارو امکان‌پذیر است",
-      "url": "https://medunited.ir/archive/2026-11-16/#i-8f82e1d5",
+      "title": "سازمان غذا و دارو: آمارهای متفاوت کمبود دارو با تعریف‌های یکسان قابل مقایسه نیست",
+      "url": "https://medunited.ir/news/ifda-spokesman-differing-drug-shortage-figures-are-not-compa-4f8c5ca2/",
       "source": "MedUnited",
-      "category": "context",
-      "reason": "کمبود در عنوان خبر مطرح نشده است"
+      "category": "review",
+      "reason": "خبر درباره کمبود است، اما داروی مشخصی در عنوان ندارد"
     },
     {
-      "title": "تلاش‌های پیرصالحی برای وصول مطالبات دارو و تجهیزات پزشکی",
-      "url": "https://medunited.ir/archive/2026-11-16/#i-2e30f7b4",
-      "source": "MedUnited",
-      "category": "context",
-      "reason": "کمبود در عنوان خبر مطرح نشده است"
-    },
-    {
-      "title": "سازمان EMA پایان کمبود داروی Mycobutin (ریفابوتین) را اعلام کرد",
-      "url": "https://medunited.ir/archive/2026-11-16/#i-a17466ea",
-      "source": "MedUnited",
-      "category": "resolved",
-      "reason": "عنوان از رفع کمبود می‌گوید"
+      "title": "تعریف های مختلف از کمبودهای دارویی",
+      "url": "https://doshanbehayedarouei.ir/pharma/32660/",
+      "source": "DoshanbehayeDarouei",
+      "category": "review",
+      "reason": "خبر درباره کمبود است، اما داروی مشخصی در عنوان ندارد"
     }
   ],
   "note": "دسته‌بندی خودکار است و تأیید کمبود فعلی محسوب نمی‌شود."
