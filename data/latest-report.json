@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-11-17T20:58:54.731515+00:00",
+  "generated_at": "2026-11-18T07:34:00.476730+00:00",
   "sources_checked": 3,
-  "signals_seen": 7,
-  "new_signals": 2,
+  "signals_seen": 6,
+  "new_signals": 1,
   "categories": {
-    "review": 2
+    "context": 1
   },
   "source_counts": {
-    "MedUnited": 5,
+    "MedUnited": 4,
     "DoshanbehayeDarouei": 2,
     "IFDANA": null
   },
@@ -20,18 +20,11 @@
   ],
   "items": [
     {
-      "title": "تعریف‌های مختلف از کمبودهای دارویی",
-      "url": "https://medunited.ir/archive/2026-11-17/#i-4ad92ad6",
+      "title": "بیمارستان ۱۰۰ تختخوابی روان در ایلام ساخته می‌شود",
+      "url": "https://medunited.ir/archive/2026-11-18/#i-87ddae2e",
       "source": "MedUnited",
-      "category": "review",
-      "reason": "خبر درباره کمبود است، اما داروی مشخصی در عنوان ندارد"
-    },
-    {
-      "title": "قرچک همچنان با کمبود تخت بیمارستانی و سرانه ورزشی مواجه است",
-      "url": "https://medunited.ir/archive/2026-11-17/#i-8f532d26",
-      "source": "MedUnited",
-      "category": "review",
-      "reason": "خبر درباره کمبود است، اما داروی مشخصی در عنوان ندارد"
+      "category": "context",
+      "reason": "کمبود در عنوان خبر مطرح نشده است"
     }
   ],
   "note": "دسته‌بندی خودکار است و تأیید کمبود فعلی محسوب نمی‌شود."
