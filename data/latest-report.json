@@ -1,14 +1,13 @@
 {
-  "generated_at": "2026-11-18T20:36:13.327124+00:00",
+  "generated_at": "2026-11-19T07:30:35.442851+00:00",
   "sources_checked": 3,
-  "signals_seen": 8,
-  "new_signals": 2,
+  "signals_seen": 9,
+  "new_signals": 1,
   "categories": {
-    "context": 1,
     "review": 1
   },
   "source_counts": {
-    "MedUnited": 6,
+    "MedUnited": 7,
     "DoshanbehayeDarouei": 2,
     "IFDANA": null
   },
@@ -21,15 +20,8 @@
   ],
   "items": [
     {
-      "title": "ورود دیوان محاسبات به ابهامات قرارداد ارزی تأمین دارو از ذخایر راهبردی",
-      "url": "https://medunited.ir/archive/2026-11-18/#i-8af3242c",
-      "source": "MedUnited",
-      "category": "context",
-      "reason": "کمبود در عنوان خبر مطرح نشده است"
-    },
-    {
-      "title": "کاهش کمبود داروهای حیاتی از ۴۷ به ۳۷ قلم",
-      "url": "https://medunited.ir/archive/2026-11-18/#i-990345be",
+      "title": "مرگ‌ومیر نوزادان در بوشهر و تداوم کمبودهای درمانی",
+      "url": "https://medunited.ir/archive/2026-11-19/#i-2245b090",
       "source": "MedUnited",
       "category": "review",
       "reason": "خبر درباره کمبود است، اما داروی مشخصی در عنوان ندارد"
