@@ -1,13 +1,11 @@
 {
-  "generated_at": "2026-11-19T07:30:35.442851+00:00",
+  "generated_at": "2026-11-19T20:41:42.123781+00:00",
   "sources_checked": 3,
-  "signals_seen": 9,
-  "new_signals": 1,
-  "categories": {
-    "review": 1
-  },
+  "signals_seen": 6,
+  "new_signals": 0,
+  "categories": {},
   "source_counts": {
-    "MedUnited": 7,
+    "MedUnited": 4,
     "DoshanbehayeDarouei": 2,
     "IFDANA": null
   },
@@ -18,14 +16,6 @@
       "error": "timed out"
     }
   ],
-  "items": [
-    {
-      "title": "مرگ‌ومیر نوزادان در بوشهر و تداوم کمبودهای درمانی",
-      "url": "https://medunited.ir/archive/2026-11-19/#i-2245b090",
-      "source": "MedUnited",
-      "category": "review",
-      "reason": "خبر درباره کمبود است، اما داروی مشخصی در عنوان ندارد"
-    }
-  ],
+  "items": [],
   "note": "دسته‌بندی خودکار است و تأیید کمبود فعلی محسوب نمی‌شود."
 }
