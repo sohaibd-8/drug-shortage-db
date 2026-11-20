@@ -1,11 +1,13 @@
 {
-  "generated_at": "2026-11-19T20:41:42.123781+00:00",
+  "generated_at": "2026-11-20T07:21:35.262209+00:00",
   "sources_checked": 3,
-  "signals_seen": 6,
-  "new_signals": 0,
-  "categories": {},
+  "signals_seen": 7,
+  "new_signals": 1,
+  "categories": {
+    "foreign": 1
+  },
   "source_counts": {
-    "MedUnited": 4,
+    "MedUnited": 5,
     "DoshanbehayeDarouei": 2,
     "IFDANA": null
   },
@@ -16,6 +18,14 @@
       "error": "timed out"
     }
   ],
-  "items": [],
+  "items": [
+    {
+      "title": "قانون‌گذاران آمریکایی خواستار رقابت زیست‌فناوری این کشور با چین شدند",
+      "url": "https://medunited.ir/archive/2026-11-20/#i-6386fb79",
+      "source": "MedUnited",
+      "category": "foreign",
+      "reason": "خبر درباره کشور دیگری است"
+    }
+  ],
   "note": "دسته‌بندی خودکار است و تأیید کمبود فعلی محسوب نمی‌شود."
 }
