@@ -1,11 +1,13 @@
 {
-  "generated_at": "2026-11-20T20:26:20.717482+00:00",
+  "generated_at": "2026-11-21T07:14:26.519692+00:00",
   "sources_checked": 3,
-  "signals_seen": 7,
-  "new_signals": 0,
-  "categories": {},
+  "signals_seen": 5,
+  "new_signals": 1,
+  "categories": {
+    "review": 1
+  },
   "source_counts": {
-    "MedUnited": 5,
+    "MedUnited": 3,
     "DoshanbehayeDarouei": 2,
     "IFDANA": null
   },
@@ -16,6 +18,14 @@
       "error": "timed out"
     }
   ],
-  "items": [],
+  "items": [
+    {
+      "title": "بررسی رابطه کمبود اکسیژن در ارتفاعات با سلامت کلونی‌های زنبور عسل",
+      "url": "https://medunited.ir/archive/2026-11-21/#i-09ac78ba",
+      "source": "MedUnited",
+      "category": "review",
+      "reason": "خبر درباره کمبود است، اما داروی مشخصی در عنوان ندارد"
+    }
+  ],
   "note": "دسته‌بندی خودکار است و تأیید کمبود فعلی محسوب نمی‌شود."
 }
