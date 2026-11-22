@@ -1,12 +1,14 @@
 {
-  "generated_at": "2026-11-21T19:19:59.013631+00:00",
+  "generated_at": "2026-11-22T06:55:29.041090+00:00",
   "sources_checked": 3,
-  "signals_seen": 4,
-  "new_signals": 0,
-  "categories": {},
+  "signals_seen": 3,
+  "new_signals": 1,
+  "categories": {
+    "review": 1
+  },
   "source_counts": {
     "MedUnited": 3,
-    "DoshanbehayeDarouei": 1,
+    "DoshanbehayeDarouei": 0,
     "IFDANA": null
   },
   "fallback_sources": [],
@@ -16,6 +18,14 @@
       "error": "timed out"
     }
   ],
-  "items": [],
+  "items": [
+    {
+      "title": "کمبود متخصص بیهوشی و رادیولوژی در دانشگاه علوم پزشکی زاهدان",
+      "url": "https://medunited.ir/archive/2026-11-22/#i-e60cbfde",
+      "source": "MedUnited",
+      "category": "review",
+      "reason": "خبر درباره کمبود است، اما داروی مشخصی در عنوان ندارد"
+    }
+  ],
   "note": "دسته‌بندی خودکار است و تأیید کمبود فعلی محسوب نمی‌شود."
 }
