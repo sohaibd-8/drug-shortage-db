@@ -1,11 +1,13 @@
 {
-  "generated_at": "2026-11-22T19:44:57.056520+00:00",
+  "generated_at": "2026-11-23T07:44:11.794466+00:00",
   "sources_checked": 3,
-  "signals_seen": 2,
-  "new_signals": 0,
-  "categories": {},
+  "signals_seen": 3,
+  "new_signals": 1,
+  "categories": {
+    "review": 1
+  },
   "source_counts": {
-    "MedUnited": 2,
+    "MedUnited": 3,
     "DoshanbehayeDarouei": 0,
     "IFDANA": null
   },
@@ -16,6 +18,14 @@
       "error": "timed out"
     }
   ],
-  "items": [],
+  "items": [
+    {
+      "title": "شهریاری | نگرانی جدی از کمبود داروهای حیاتی و افزایش قیمت‌ها",
+      "url": "https://medunited.ir/archive/2026-11-23/#i-f8629607",
+      "source": "MedUnited",
+      "category": "review",
+      "reason": "خبر درباره کمبود است، اما داروی مشخصی در عنوان ندارد"
+    }
+  ],
   "note": "دسته‌بندی خودکار است و تأیید کمبود فعلی محسوب نمی‌شود."
 }
