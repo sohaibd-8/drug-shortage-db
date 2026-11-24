@@ -1,9 +1,11 @@
 {
-  "generated_at": "2026-11-23T23:57:19.239547+00:00",
+  "generated_at": "2026-11-24T09:58:21.428607+00:00",
   "sources_checked": 3,
   "signals_seen": 3,
-  "new_signals": 0,
-  "categories": {},
+  "new_signals": 1,
+  "categories": {
+    "context": 1
+  },
   "source_counts": {
     "MedUnited": 3,
     "DoshanbehayeDarouei": 0,
@@ -16,6 +18,14 @@
       "error": "timed out"
     }
   ],
-  "items": [],
+  "items": [
+    {
+      "title": "دوشنبه های دارویی | اجرای برنامه نوسازی ذخایر استراتژیک دارویی",
+      "url": "https://medunited.ir/archive/2026-11-24/#i-c76763b5",
+      "source": "MedUnited",
+      "category": "context",
+      "reason": "کمبود در عنوان خبر مطرح نشده است"
+    }
+  ],
   "note": "دسته‌بندی خودکار است و تأیید کمبود فعلی محسوب نمی‌شود."
 }
