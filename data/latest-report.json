@@ -1,11 +1,13 @@
 {
-  "generated_at": "2026-11-25T08:41:23.725319+00:00",
+  "generated_at": "2026-11-25T21:45:19.846684+00:00",
   "sources_checked": 3,
-  "signals_seen": 1,
-  "new_signals": 0,
-  "categories": {},
+  "signals_seen": 3,
+  "new_signals": 2,
+  "categories": {
+    "context": 2
+  },
   "source_counts": {
-    "MedUnited": 1,
+    "MedUnited": 3,
     "DoshanbehayeDarouei": 0,
     "IFDANA": null
   },
@@ -16,6 +18,21 @@
       "error": "timed out"
     }
   ],
-  "items": [],
+  "items": [
+    {
+      "title": "فغان از تحریم دارو نزد نماینده سازمان WHO",
+      "url": "https://medunited.ir/archive/2026-11-25/#i-55584deb",
+      "source": "MedUnited",
+      "category": "context",
+      "reason": "کمبود در عنوان خبر مطرح نشده است"
+    },
+    {
+      "title": "برای تأمین دارو گاهی ناگزیر به پذیرش افزایش قیمت هستیم",
+      "url": "https://medunited.ir/archive/2026-11-25/#i-26bdecb2",
+      "source": "MedUnited",
+      "category": "context",
+      "reason": "کمبود در عنوان خبر مطرح نشده است"
+    }
+  ],
   "note": "دسته‌بندی خودکار است و تأیید کمبود فعلی محسوب نمی‌شود."
 }
