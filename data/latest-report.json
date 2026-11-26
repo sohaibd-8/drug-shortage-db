@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-11-26T08:25:34.097589+00:00",
+  "generated_at": "2026-11-26T21:37:58.452963+00:00",
   "sources_checked": 3,
-  "signals_seen": 3,
+  "signals_seen": 4,
   "new_signals": 1,
   "categories": {
     "context": 1
   },
   "source_counts": {
-    "MedUnited": 3,
+    "MedUnited": 4,
     "DoshanbehayeDarouei": 0,
     "IFDANA": null
   },
@@ -20,8 +20,8 @@
   ],
   "items": [
     {
-      "title": "سفر وزیر بهداشت به قزوین | قول تأمین بودجه و متخصص بیمارستان آبیک",
-      "url": "https://medunited.ir/archive/2026-11-26/#i-17c4d95c",
+      "title": "دوشنبه‌های دارویی | انتقاد از توقف محموله ۲۰۰ میلیون دلاری دارو در هند",
+      "url": "https://medunited.ir/archive/2026-11-26/#i-e97e5966",
       "source": "MedUnited",
       "category": "context",
       "reason": "کمبود در عنوان خبر مطرح نشده است"
