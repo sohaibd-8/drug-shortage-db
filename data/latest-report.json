@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-25T21:45:19.846684+00:00",
+  "generated_at": "2026-11-26T08:25:34.097589+00:00",
   "sources_checked": 3,
   "signals_seen": 3,
-  "new_signals": 2,
+  "new_signals": 1,
   "categories": {
-    "context": 2
+    "context": 1
   },
   "source_counts": {
     "MedUnited": 3,
@@ -20,15 +20,8 @@
   ],
   "items": [
     {
-      "title": "فغان از تحریم دارو نزد نماینده سازمان WHO",
-      "url": "https://medunited.ir/archive/2026-11-25/#i-55584deb",
-      "source": "MedUnited",
-      "category": "context",
-      "reason": "کمبود در عنوان خبر مطرح نشده است"
-    },
-    {
-      "title": "برای تأمین دارو گاهی ناگزیر به پذیرش افزایش قیمت هستیم",
-      "url": "https://medunited.ir/archive/2026-11-25/#i-26bdecb2",
+      "title": "سفر وزیر بهداشت به قزوین | قول تأمین بودجه و متخصص بیمارستان آبیک",
+      "url": "https://medunited.ir/archive/2026-11-26/#i-17c4d95c",
       "source": "MedUnited",
       "category": "context",
       "reason": "کمبود در عنوان خبر مطرح نشده است"
