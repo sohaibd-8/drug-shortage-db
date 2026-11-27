@@ -1,11 +1,9 @@
 {
-  "generated_at": "2026-11-26T21:37:58.452963+00:00",
+  "generated_at": "2026-11-27T08:40:18.756655+00:00",
   "sources_checked": 3,
   "signals_seen": 4,
-  "new_signals": 1,
-  "categories": {
-    "context": 1
-  },
+  "new_signals": 0,
+  "categories": {},
   "source_counts": {
     "MedUnited": 4,
     "DoshanbehayeDarouei": 0,
@@ -18,14 +16,6 @@
       "error": "timed out"
     }
   ],
-  "items": [
-    {
-      "title": "دوشنبه‌های دارویی | انتقاد از توقف محموله ۲۰۰ میلیون دلاری دارو در هند",
-      "url": "https://medunited.ir/archive/2026-11-26/#i-e97e5966",
-      "source": "MedUnited",
-      "category": "context",
-      "reason": "کمبود در عنوان خبر مطرح نشده است"
-    }
-  ],
+  "items": [],
   "note": "دسته‌بندی خودکار است و تأیید کمبود فعلی محسوب نمی‌شود."
 }
